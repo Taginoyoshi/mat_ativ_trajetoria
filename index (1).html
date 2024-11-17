@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformar SWF em JS</title>
+    <script src="lib/swf2js.js"></script>
+</head>
+<body>
+    <div id="swf-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Caminho para o arquivo SWF
+            const swfPath = "swf/mat_ativ_trajetoria.swf";
+
+            // Configuração do swf2js para carregar o arquivo SWF
+            swf2js.load(swfPath, {
+                id: "swf-container",   // O ID do elemento onde o SWF será exibido
+                width: 800,
+                height: 600,
+            });
+        });
+    </script>
+</body>
+</html>
+
